@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<!--mate kodla sayfanın bilgileri girdim-->
+	<meta name="title" content="İletişim"/>
+	<meta name="description" content="Kişisel Web Sayfası"/>
+	<meta name="keywords" content="Liza-WCtrl,HTML,web,öğrenci,ogrenci"/>
+	<meta name="author" content="Liza-WCtrl"/>
+	<meta name="refresh" content="20"/>
+<title>iletisim.html</title>
+</head>
+<!--body içine 2 tablo ve 1 form yazmıştım-->
+<body background="img/Arka_Plan.jpg">
+	<!--1 tablo, başka sayfaların linkleri-->
+	<table bgcolor="black" align="center" cellspacing="10" cellpadding="10">
+		<tr>
+			<td width="370">                                         </td>
+			<td bgcolor="black" width="100"><a href="./index.html" target="_blank"><font face="Arista" size="+1" color="#FFFFFF">Anasayfa</font></a></td>
+			<td bgcolor="black" width="100"><a href="./AboutMe.html" target="_blank"><font face="Arista" size="+1" color="#FFFFFF">Hakkımda</font></a></td>
+			<td bgcolor="black" width="100"><a href="./Gallery.html" target="_blank"><font face="Arista" size="+1" color="#FFFFFF">Galeri</font></a></td>
+			<td bgcolor="black" width="100"><a href="./Communication.html"><font face="Arista" size="+1" color="#FFFFFF">İletişim</font></a></td>
+			<td width="370">                                         </td>
+		</tr>
+	</table><br/><br/>
+	<!--2 tablo, giriş sözlerim ve e-mail adres-->
+	<table bgcolor="#707070" align="center">
+		<tr>
+			<td width="60"></td>
+			<td><b>Umarım sitemi beğendiniz. Tabiki de hiç kimse mükemmel değil tıpkı sitem gibi ve mükemmel olamaz fakat daha iyi bir site yapabilerim. Bunun için sizden bir rıcam olacak. Bir sorun varsa ve ya daha güzel bir şey yapabileceğimi inanıyorsanız lütfen aşağıdaki e-mail adres ve ya yorumunuzu bırakarak bana ulaşabilirsiniz. </b></td>
+			<td width="60"></td>
+		</tr>
+		<tr>
+			<td width="60"></td>
+			<td align="center"><b>E-Mail Adres:Lorem@gmail.com</b></td>
+			<td width="60"></td>
+		</tr>
+	</table><br/>
+	<!--form kod ile büyük başlık, tablo yaptım-->
+	<form name="form" action="İletişim.html" method="post">
+		<!--başlık-->
+		<h3 align="center">Yorumunuzu Bırakabilirsiniz:</h3><br/>
+		<!--tablo içine yorum bırakmak için girilmesi gereken bölümler ve ekstra sorular yaptım-->
+		<table bgcolor="#707070" align="center">
+			<tr height="10">
+				<td></td>
+			</tr>
+			<!--ad girilecek-->
+			<tr>
+				<td width="50"></td>
+				<td align="center"><b>Adınız:</b></td>
+				<td><input type="text" name="ad" size="25"></td>
+				<td width="60"></td>
+			</tr>
+			<!--soyad girilecek-->
+			<tr>
+				<td width="50"></td>
+				<td align="center"><b>Soyadınız:</b></td>
+				<td><input type="text" name="soyad" size="25"></td>
+				<td width="60"></td>
+			</tr>
+			<!--cinsiyet seçecek, tek seçenek seçilen kod-->
+			<tr>
+				<td width="50"></td>
+				<td align="center"><b>Cinsiyetiniz:</b></td>
+				<td><input type="radio" name="cinsiyet" value="erkek">Erkek
+				<input type="radio" name="cinsiyet" value="kiz">Kız</td>
+				<td width="60"></td>
+			</tr>
+			<!--yorumun yazılacak yer-->
+			<tr>
+				<td width="50"></td>
+				<td align="center"><b>Yorumunuz:</b></td>
+				<td><textarea cols="40" rows="5">Yorum Alanı:</textarea></td>
+				<td width="60"></td>
+			</tr>
+			<!--sadece yazı-->
+			<tr>
+				<td colspan="4" align="center">*Aşağıdaki sorular zorunlu değil.</td>
+			</tr>
+			<!--seçim kutusu-->
+			<tr>
+				<td width="50"></td>
+				<td align="center"><b>Bölgeniz:</b></td>
+				<td><select name="bolge">
+						<option value="secin">Seçin</option>
+						<option value="akdeniz">Akdeniz</option>
+						<option value="karadeniz">Karadeniz</option>
+						<option value="marmara">Marmara</option>
+						<option value="ege">Ege</option>
+						<option value="ic_anadolu">İç Anadolu</option>
+						<option value="dogu_anadolu">Doğu Anadolu</option>
+						<option value="guneydogu_anadolu">Güneydoğu Anadolu</option>
+						<option value="yurtdisi">Yurtdışı</option>
+					</select></td>
+				<td width="60"></td>
+			</tr>
+			<!--başlıklar-->
+			<tr>
+				<td width="50"></td>
+				<td align="center"><b>Favori Video Oyun Türlriniz:</b></td>
+				<td><b>&nbsp;&nbsp;&nbsp;Favori Kitap Türleriniz:</b></td>
+				<td width="60"></td>
+			</tr>
+			<!--yukardaki başlıkların seçim yapılacak seçenekler, birden fazla seçilen kod-->
+			<tr>
+				<td width="50"></td>
+				<td><input type="checkbox" name="aksiyon" value="aksiyon">Aksiyon<br>
+				<input type="checkbox" name="macera" value="macera">Macera<br>
+				<input type="checkbox" name="bulmaca" value="bulmaca">Bulmaca<br>
+				<input type="checkbox" name="platform" value="platform">Platform<br>
+				<input type="checkbox" name="strateji" value="strateji">Strateji<br>
+				<input type="checkbox" name="korku" value="korku">Korku<br>
+				<input type="checkbox" name="mantiksal" value="mantiksal">Mantıksal<br>
+				<input type="checkbox" name="simulasyon" value="simulasyon">Simülasyon<br>
+				<input type="checkbox" name="pvp" value="pvp">PvP<br>
+				<input type="checkbox" name="mmorpg" value="mmorpg">MMORPG<br>
+				<input type="checkbox" name="liste_disi" value="liste_disi">Liste dışı<br></td>
+				
+				<td>&nbsp;&nbsp;&nbsp;<input type="checkbox" name="roman" value="roman">Roman<br>
+				&nbsp;&nbsp;&nbsp;<input type="checkbox" name="hikaye" value="hikaye">Hikâye<br>
+				&nbsp;&nbsp;&nbsp;<input type="checkbox" name="masal" value="masal">Masal<br>
+				&nbsp;&nbsp;&nbsp;<input type="checkbox" name="efsane" value="efsane">Efsane<br>
+				&nbsp;&nbsp;&nbsp;<input type="checkbox" name="bilim" value="bilim">Bilim<br>
+				&nbsp;&nbsp;&nbsp;<input type="checkbox" name="biyografi" value="biyografi">Biyografi<br>
+				&nbsp;&nbsp;&nbsp;<input type="checkbox" name="mizah" value="mizah">Mizah<br>
+				&nbsp;&nbsp;&nbsp;<input type="checkbox" name="oyku" value="oyku">Öykü<br>
+				&nbsp;&nbsp;&nbsp;<input type="checkbox" name="siir" value="siir">Şiir<br>
+				&nbsp;&nbsp;&nbsp;<input type="checkbox" name="tarih" value="tarih">Tarih<br>
+				&nbsp;&nbsp;&nbsp;<input type="checkbox" name="liste_disi" value="liste_disi">Liste dışı<br></td>
+				<td width="60"></td>
+			</tr>
+			<!--gönder ve temizle butonlar-->
+			<tr>
+				<td width="50"></td>
+				<td align="center"><input type="submit" name="gonder" value="Gönder"></td>
+				<td align="center"><input type="reset" name="temizle" value="Temizle"></td>
+				<td width="60"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
